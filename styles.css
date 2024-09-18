@@ -17,18 +17,43 @@ header.hero {
     background-image: url('images/saint-joe.jpeg');
     background-position: center;
     height: 100vh;
-    /* display: flex; */
     align-items: center;
-    justify-content: center;color: #fff;
+    justify-content: center;
+    color: #fff;
     text-align: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    font-size: 1.4rem;
+}
+
+.biography {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    align-items: center;
+}
+
+.biography h2 {
+    font-size: 4rem;
+}
+
+.biography p {
+    font-size: 1.4rem;
 }
 
 #kent-pose-waterfall {
     border-radius: 50%;
     width: 400px;
     margin-top: 50px;
+    opacity: 0.4;
 }
 header {
     text-align: center;
