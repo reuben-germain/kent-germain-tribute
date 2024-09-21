@@ -1,170 +1,80 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: monospace Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
     line-height: 1.6;
-    padding: 20px;
-    background-color: #f7f7f7;
     color: #333;
 }
 
-header.hero {
+header {
     background-size: cover;
-    background-image: url('images/saint-joe.jpeg');
     background-position: center;
     height: 100vh;
+    /* display: flex; */
+    text-align: center;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    text-align: center;
+    color: white;
+    background-image: url('images/saint-joe.jpeg');
     background-repeat: no-repeat;
     background-attachment: scroll;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-content h1 {
-    font-size: 5rem;
-    margin-bottom: 20px;
-}
-
-.hero-content {
-    font-size: 1.4rem;
-}
-
-#red {
-    color: #c44601;
-}
-
-#gold {
-    color: gold;
-}
-
-#green {
-    color: #029356;
-}
-
-.biography {
-    margin: 0 auto;
-    width: 60%;
-    text-align: center;
-    align-items: center;
-}
-
-.biography h2 {
-    font-size: 4rem;
-}
-
-.biography p {
-    font-size: 1.4rem;
-}
-
-#kent-pose-waterfall {
+header img {
+    max-height: 100%;
+    max-width: 35%;
+    height: auto;
     border-radius: 50%;
-    width: 400px;
-    margin: 50px;
     opacity: 0.4;
 }
 
-#flag {
-    border-radius: 10%;
-    align-items: center;
-    justify-items: center;
-    width: 80%;
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
-header {
-    text-align: center;
-    margin-bottom: 30px;
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
-h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
+.hero-content blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 1em;
 }
 
-.gallery .grid {
-    display: grid;
-    gap: 10px;
+.biography {
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-figure {
-    margin: 0;
-    /* position: relative; */
-    overflow: hidden;
+#flag{
+    width: 70%;
+    height: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1em;
+    margin: 40px auto;
+    border-radius: 12em;
 }
 
-figure img {
-    /* width: 100%; */
-    width: 400px;
-    /* height: auto; */
-    height: 300px;
-    display: block;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: transform 0.5s ease;
-    /* transition: all 0.5s ease; */
-}
-
-figure:hover img {
-    /* transform: scale(1.1); */
-    transform: scale(1.05);
-}
-
-figcaption {
-    padding: 10px;
-    /* background-color: rgba(0, 0, 0, 0.7); */
-    background-color: #fff;
-    /* color: #fff; */
-    color: #2c3e50;
-    /* font-size: 1.2rem; */
-    font-size: 1rem;
-    text-align: center;
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* width: 100%; */
-    /* opacity: 0; */
-    /* transition: opacity 0.5s ease; */
+#kent-pose-waterfall {
+    width: 70%;
+    height: auto;
+    position: relative;
+    display: flex;
+    margin: 40px auto;
 }
 
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    margin-top: 40px;
-    color: #999;
-}
-
-/* Responsive Design */
-@media (min-width: 1200px) {
-    .gallery .grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .gallery .grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .gallery .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 767px) {
-    .gallery .grid {
-        /* grid-template-columns: repeat(1, 1fr); */
-        grid-template-columns: 1fr;
-    }
+    padding: 1em;
+    margin-top: 2em;
+    /* position: relative; */
+    bottom: 0;
+    width: 100%;
 }
