@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,24 @@ body {
     line-height: 1.6;
     color: #333;
 }
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    /* position: relative; */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Home Page */
 
 header {
     background-size: cover;
@@ -46,7 +65,7 @@ header img {
     margin-bottom: 1em;
 }
 
-.biography {
+.biography, .gallery {
     padding: 2em;
     margin: 0 auto;
     max-width: 1200px;
@@ -68,13 +87,16 @@ header img {
     margin: 40px auto;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-    /* position: relative; */
-    bottom: 0;
-    width: 100%;
+/* Gallery Page */
+.gallery .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.gallery .photo-grid img {
+    width: 290px;
+    height: auto;
+    border-radius: 0.5em;
 }
